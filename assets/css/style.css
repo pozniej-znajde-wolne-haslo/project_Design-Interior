@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62,5%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: clamp(1rem,10vw,3rem);
+    max-width: 60rem;
+    margin: auto;
 }
 
 
@@ -16,7 +22,7 @@ body {
 }
 
 .site_intro section {
-    width: 40vw;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,21 +31,21 @@ body {
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: lighter;
-    letter-spacing: 2vw;
+    letter-spacing: 1vw;
     text-align: center;
     margin-bottom: 2vh;
-    padding-left: 2vw;
+    padding-left: 1vw;
 }
 
 .site_intro p {
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 
 .site_intro img {
-    width: 60vw;
+    width: 60%;
 }
 
 
@@ -48,10 +54,10 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: #2e2e2e;
-    padding: 2vh 0;
+    padding: 3vh 0;
     position: sticky;
     top: 0;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 
 nav a {
@@ -60,7 +66,7 @@ nav a {
 }
 
 nav a:first-child {
-    width: 45vw;
+    width: 35%;
     text-align: end;
 }
 
@@ -68,11 +74,11 @@ nav a:first-child {
 .story {
     display: flex;
     background-color: #2e2e2e;
-    padding: 8vh 0;
+    padding: 10vh 0;
 }
 
 .story img {
-    width: 55vw;
+    width: 125%;
 }
 
 .story article {
@@ -90,27 +96,27 @@ nav a:first-child {
 }
 
 .story article p {
-    padding: 1vh 2.5vw;
-    font-size: 1.5vw;
+    padding: 1.5vh 3.5vw;
+    font-size: 1.3vw;
     line-height: 1.5;
+    text-align: justify;
 }
 
 
 /*  --- FEATURED --- */
 .featured h2 {
-   /*  text-align: center; */
     font-size: 3vw;
     font-weight: lighter;
     margin: auto;
-    margin-top: 8vh;
+    margin-top: 10vh;
     margin-bottom: 1vh;
     width: 20vw;
     text-align: center;
 }
 
 .featured .featured_text {
-    /* text-align: center; */
-    font-size: 1.5vw;
+    text-align: justify;
+    font-size: 1.3vw;
     line-height: 1.5;
     width: 40vw;
     margin: auto;
@@ -122,13 +128,22 @@ nav a:first-child {
     padding: 5vh 0;
 }
 
+.img_gallery div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+}
+
 .img_gallery img {
-    width: 27vw;
+    width: 100%;
 }
 
 .img_gallery div p {
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    width: 75%;
+    padding-top: .5vh;
 }
 
 
@@ -136,35 +151,35 @@ nav a:first-child {
 .contact {
     background-color: #2e2e2e;
     color: #fff;
-    padding-bottom: 9vh;
-    padding-top: 4vh;
+    padding: 9vh 0 9vh 4vw;
+    padding-right: 0;
     position: relative;
+    margin-top: 5vh;
 }
 
 .contact h2 {
-    font-weight: lighter;
     font-size: 3vw;
+    font-weight: lighter;
     color: #fff;
-    padding: 8vh 0 0 5vw;
-    width: 27vw;
+    width: 31vw;
 }
 
 .contact p {
     line-height: 1.5;
-    font-size: 1.5vw;
-    width: 40vw;
-    margin: 2vh 5vw;
+    font-size: 1.3vw;
+    width: 40%;
+    margin: 2vh 0;
 }
 
 .contact aside {
-    width: 25vw;
-    height: 19vh;
+    width: 25%;
+    height: 18vh;
     background-color: rgb(228, 221, 221);
     border-top-right-radius: 60%;
     border-bottom-left-radius: 30%;
     position: absolute;
-    top: 10vh;
-    left: 60vw;
+    top: 25%;
+    left: 60%;
 }
 
 /*  --- FOOTER --- */
@@ -173,13 +188,13 @@ footer {
     justify-content: space-between;
     color: #fff;
     background-color: #1d2c2f;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     padding: 2.5vh 2vw;
 }
 
 footer div a {
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: #fff;
     margin-left: 1.5vw;
 }
